@@ -1,0 +1,7 @@
+// Build the Random Forecaster app
+var cities = getColumn("Daily Weather", "City");
+var highTemps = getColumn("Daily Weather", "High Temperature");
+var lowTemps = getColumn("Daily Weather", "Low Temperature");
+var images = getColumn("Daily Weather", "Icon");
+var conditions = getColumn("Daily Weather", "Main Condition");
+var numberForecast = getColumn("Daily Weather", "Forecast Number");
