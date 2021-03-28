@@ -11,3 +11,6 @@ var tomorrowHigh = [];
 var tomorrowLow = [];
 var tomorrowImages = [];
 var tomorrowConditions = [];
+onEvent("forecastButton", "click", function( ) {
+  forecastChange();
+});
