@@ -14,3 +14,12 @@ var tomorrowConditions = [];
 onEvent("forecastButton", "click", function( ) {
   forecastChange();
 });
+for (var i = 0; i < cities.length; i++) {
+  if (numberForecast [i] == 1) {
+    appendItem(tomorrowCities, cities [i]);
+    appendItem(tomorrowHigh, highTemps [i]);
+    appendItem(tomorrowLow, lowTemps [i]);
+    appendItem(tomorrowImages, images [i]);
+    appendItem(tomorrowConditions, conditions [i]);
+  }
+}
