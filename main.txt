@@ -24,3 +24,10 @@ for (var i = 0; i < cities.length; i++) {
   }
 }
 function forecastChange() {
+ var update = randomNumber(0, tomorrowCities.length - 1);
+  setText("cityOutput", tomorrowCities [update]);
+  setText("highTempOutput", tomorrowHigh [update]);
+  setText("lowTempOutput", tomorrowLow [update]);
+  setProperty("iconOutput", "image", tomorrowImages [update]);
+  setText("conditionOutput", tomorrowConditions [update]);
+}
